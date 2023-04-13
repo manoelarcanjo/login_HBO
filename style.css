@@ -1,0 +1,188 @@
+:root {
+    --deroxo: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    color: white;
+}
+
+body {
+    background-image: url(https://t2.tudocdn.net/653854?w=1920);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.assinar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.assinar ul a {
+    text-decoration: none;
+    padding: 2rem;
+    transition: .5s ease;
+}
+
+.assinar ul a:hover {
+    color: #FBC2EB;
+    font-size: 120%;
+}
+
+.botton img {
+    padding: 0 2rem;
+}
+
+.botton, .logo {
+    cursor: pointer;
+}
+
+.headerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .headerForm h1 {
+        font-size: 55px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0px;
+    }
+
+    .headerForm P {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    .loginForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        form label {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    
+            form input {
+                border-radius: 25px;
+                border: 0px;
+                margin-bottom: 15px;
+                background: rgba(127, 127, 127, 0.75);
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 10px 40px;
+                transition: .5s ease;
+            }
+
+            form input::placeholder {
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 15px;
+            }
+    
+            button {
+                background: var(--deroxo);
+                color: #121111;
+                font-size: 20px;
+                font-weight: bold;
+                border-radius: 25px;
+                margin-top: 20px;
+                padding: 10px;
+                cursor: pointer;
+                margin-bottom: 2rem;
+                border: none;
+                transition: .5s ease;
+                width: 25rem;
+            }
+    
+            .button-form {
+                display: flex;
+                justify-content: center;
+            }
+            .hboFooter{ 
+                display: flex;
+                justify-content: center;
+            }
+        
+            .hboFooter h3 {
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 35px;
+                color: #FFFFFF;
+                width: 45%;
+                text-align: center;
+            }
+
+            .buttonFooter {
+                text-align: center;
+            }
+        
+            .buttonFooter button {
+                    background: var(--deroxo);
+                    color: #121111;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 25px;
+                    margin-top: 20px;
+                    padding: 10px 55px;
+                    border: none;
+                    cursor: pointer;
+                    transition: .5s ease;
+            }
+
+            button:hover {
+                font-size: 1.6rem;
+            }
+
+@media screen and (max-width:660px){
+
+    body{
+        margin-top: 15%;
+        background-position: center;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #principal {
+        margin-bottom: 15px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .hboFooter h3 {
+        width: 80%;
+    }
+}
